@@ -1,0 +1,79 @@
+.dashboardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.leftSection{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.leftSection h1{
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.leftSection p{
+    margin: 0;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+.rightSection{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profileIcon{
+    font-size: 30px;
+    color: #6b7280;
+
+}
+.profileContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.admin{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.owner{
+    font-size: 12px;
+    color: #6b7280;
+}
+.dateContainer{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 2px;
+    
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 11px;
+    border: none;
+    padding: 0;
+    color: #6b7280;
+    background-color: white;
+}
+
+@media(max-width: 768px){
+    .dashboardHeader{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .rightSection{
+        width: 100%;
+        justify-content: space-between;
+    }
+}

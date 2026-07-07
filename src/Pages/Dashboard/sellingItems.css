@@ -1,0 +1,78 @@
+.sellingItemsContainer{
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 16px;
+    background: white;
+    
+    
+}
+.sellingHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.sellingList{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.sellingItem{
+   padding-bottom: 12px;
+   border-bottom: 1px solid #f0f0f0;
+}
+.sellingItem span{
+    font-size: 14px;
+}
+.itemTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    gap: 10px
+}
+.itemTop .name{
+    font-weight: 500;
+}
+.itemTop .orders{
+    font-size: 13px;
+    
+}
+.itemTop .percent{
+    font-size: 13px;
+    font-weight: 500;
+}
+.progressBar{
+    width: 100%;
+    height: 6px;
+    border-radius: 4px;
+    background: #eee;
+    overflow: hidden;
+}
+.barFill{
+    background-color: #7c3aed;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.noSales{
+    text-align: center;
+    color: #6b7280;
+    padding: 20px 0 ;
+    font-size: 14px;
+}
+@media(max-width:768px){
+    .sellingHeader{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .sellingHeader select{
+        width: 100%
+    }
+
+    .itemTop{
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,170 @@
+.spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menuContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px
+}
+
+.menuCard{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    
+}
+
+.menuHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px 0 ;
+    border-bottom:  1px solid #eee;
+}
+
+.menuHeader h2{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.menuImage{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.menuInfo{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.category{
+    font-size: 14px;
+    text-transform: capitalize;
+    color: gray;
+
+}
+
+.priceSection{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+}
+
+.rating{
+    font-weight: bold;
+}
+
+.searchInput{
+    display: block;
+    width: 100%;
+    max-width:320px ;
+    margin: 20px ;
+    padding: 12px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+
+
+.menuTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.filterBtn{
+    padding: 10px 16px;
+    border: 1px solid #d1d5db;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.activeFilter{
+    padding: 10px 16px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.filterContainer{
+    display: flex;
+    gap: 10px
+}
+.noResults{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.topActions{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.addBtn{
+    padding: 10px 16px;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    
+    color: white;
+
+}
+
+.addBtn:hover{
+    background-color: #1e40af;
+}
+
+
+@media(max-width:768px){
+    .menuTop{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+    .topActions{
+        flex-direction: column;
+    }
+    .searchInput{
+        margin: 0;
+        max-width: none;
+    }
+}
+
+@media(max-width:480px){
+
+    .filterContainer{
+        flex-wrap: wrap;
+    }
+
+    .filterBtn,
+    .activeFilter{
+        flex: 1;
+    }
+}

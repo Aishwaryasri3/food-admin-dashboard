@@ -1,0 +1,30 @@
+.salesContainer{
+   border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 12px;
+    background: white;
+    
+    height: 100%;
+}
+.salesHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chartWrapper{
+    height: 320px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:768px){
+    .salesHeader{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .salesHeader select{
+        width: 100%;}
+}

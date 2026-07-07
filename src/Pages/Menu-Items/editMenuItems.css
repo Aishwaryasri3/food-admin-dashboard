@@ -1,0 +1,82 @@
+.editContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f3f4f6;
+    padding: 20px;
+}
+
+.editBox{
+    width: 100%;
+    max-width: 500px ;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.editTitle{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.editForm{
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formGroup label{
+    font-weight: 500;
+}
+
+.formGroup input{
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+
+.formGroup input:focus{
+    border-color: #2563eb;
+   
+}
+
+
+.priceRow{
+    display: flex;
+    gap: 10px;
+}
+.updateBtn{
+        padding: 12px;
+        background: #2563eb;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+}
+
+.updateBtn:hover{
+    background: #1e40af;
+}
+
+.errorText{
+    color: red;
+    background: #ffe5e5;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+@media(max-width:600px){
+    .priceRow{
+        flex-direction: column;
+    }
+}

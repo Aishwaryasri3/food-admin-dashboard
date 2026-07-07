@@ -1,0 +1,43 @@
+.recentOrdersContainer{
+     border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 16px;
+    background: white;
+    height: 100%;
+}
+.recentOrdersContainer h3{
+    margin-bottom: 16px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+}
+th{
+    font-weight: 600;
+}
+.delivered{
+    background-color: green;
+}
+.pending{
+    background-color: orange;
+}
+.cancelled{
+    background-color: red;
+}
+.preparing{
+    background-color: blue;
+}
+
+@media(max-width:768px){
+    .recentOrdersContainer{
+        overflow-x: auto;
+    }
+    table{
+        min-width: 700px
+    }
+}

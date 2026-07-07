@@ -1,0 +1,76 @@
+.customersContainer{
+    padding: 20px;
+    background: #f5f7fb;
+    min-height: 100vh;
+}
+
+.customersTitle{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.customersGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px
+}
+
+.customerCard{
+    background: white;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.customerCard:hover{
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.customerName{
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+.customerInfo{
+    margin: 8px 0 ;
+    color: #555;
+}
+
+
+.itemsTitle{
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    margin-bottom: 10px;
+    color: #444;
+}
+.itemText{
+    margin: 5px 0 ;
+    color: #666;
+}
+
+.itemsList{
+    max-height: 130px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px;
+    background: #fafafa;
+}
+
+.itemsList p {
+    margin: 5px 0 ;
+    font-size: 14px;
+}
+
+@media(max-width:480px){
+    .customersContainer{
+        padding: 15px;
+    }
+    .customersTitle{
+        font-size: 24px;
+    }
+}
+

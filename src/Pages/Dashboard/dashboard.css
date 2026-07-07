@@ -1,0 +1,31 @@
+.body{
+    margin: 0;
+}
+.dashboardContainer{
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.dashboardContentRow{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: 20px;
+    
+}
+.dasboardBottom{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+
+@media(max-width:900px){
+    .dashboardContentRow{
+        grid-template-columns: 1fr;
+    }
+    .dasboardBottom{
+        grid-template-columns: 1fr;
+    }
+}

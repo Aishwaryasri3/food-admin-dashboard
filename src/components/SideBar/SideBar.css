@@ -1,0 +1,86 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+.sideBarContainer{
+    background-color: #28323f;
+    color: white;
+        height: 100vh;
+    width: 260px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0
+    
+
+    
+}
+.image{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        object-fit: cover;
+        
+      
+}
+.logoContainer{
+    display: flex;
+    align-items: center;
+    gap : 12px;
+   
+    
+}
+.nameContainer h2{
+   margin: 0;
+   font-size: 20px;
+   
+
+    
+}
+.nameContainer p{
+    margin: 2px 0 0 0 ;
+    font-size: 14px;
+    color: lightgray
+
+}
+.logoutContainer{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+.logoutIcon{
+
+font-size: 22px;
+}
+
+.sideItemsContainer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+   
+}
+
+
+.sideItem{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    
+}
+.sideItem:hover{
+    background-color: rgb(124,58,237,0.3);
+}
+.sideItem.active{
+    background-color: #7c3aed;
+    font-weight: 600;
+}

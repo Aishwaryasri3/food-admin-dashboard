@@ -1,0 +1,83 @@
+.analyticsContainer{
+    padding: 20px;
+    background: #f8f9fb;
+    min-height: 100vh;
+}
+
+.analyticsTitle{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.statsGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.statCard{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    font-weight: 500;
+}
+
+.customerSection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.customerCard{
+    background: #e8f0ff;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 500;
+    
+}
+
+.latestOrders{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.orderCard{
+    padding: 12px 18px;
+    border-bottom: 1px solid #eee;
+}
+.orderCard:last-child{
+    border-bottom: none;
+}
+
+.chartContainer{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .statsGrid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .customerSection{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 480px){
+    .statsGrid{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+

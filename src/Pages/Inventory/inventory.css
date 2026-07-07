@@ -1,0 +1,39 @@
+.inventoryContainer{
+    padding: 20px;
+}
+
+.inventoryTitle{
+    margin-bottom: 20px;
+    color: #28323f;
+}
+
+.tabContainer{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.tabBtn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e5e7eb;
+   cursor: pointer;
+   font-size: 14px;
+   font-weight: 500; 
+}
+.tabBtn:hover{
+    background-color: #d1d5db;
+}
+.activeTab{
+    background-color: #7c3aeb;
+    color: white;
+}
+
+@media(max-width:480px){
+    .inventoryContainer{
+        padding: 15px;
+    }
+    .tabBtn{
+        flex: 1;
+    }
+}
