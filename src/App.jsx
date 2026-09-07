@@ -2,13 +2,12 @@ import { useState } from 'react'
 
 
 import { Route, Routes } from 'react-router-dom'
-import Layout from './components/Layout/layout'
+import Layout from './components/Layout/Layout'
 import Dashboard from './Pages/Dashboard/Dashboard'
 import Orders from './Pages/Orders/Orders'
 import Inventory from './Pages/Inventory/Inventory'
 import Customers from './Pages/Customers/Customers'
 import Analytics from './Pages/Analytics/Analytics'
-import Reports from './Pages/Reports/Reports'
 import Settings from './Pages/Settings/Settings'
 import EditMenuItems from './Pages/Menu-Items/EditMenuItems'
 import { MenuProvider } from './context/MenuContext'
@@ -31,7 +30,6 @@ function App() {
      <Routes>
       <Route path='/' element={<Login/>} />
       <Route  element={<ProtectedRoutes> <Layout /> </ProtectedRoutes>}>
-      {/* <Route index element={<Dashboard/>}/> */}
       <Route path='dashboard' element={<Dashboard /> }/>
       <Route path='orders' element={<Orders />} />
       <Route path='inventory' element={<Inventory />} />
@@ -39,7 +37,6 @@ function App() {
       <Route path='addItem' element={<AddItem />} />
       <Route path='customers' element={<Customers />}/>
       <Route  path='analytics' element={<Analytics />}/>
-      <Route  path='reports' element={<Reports />}/>
       <Route path='settings' element={<Settings />}/>
       
       </Route>
