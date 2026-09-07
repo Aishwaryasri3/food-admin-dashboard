@@ -71,7 +71,7 @@ const AddItem = () => {
             stock: Number(formData.stock)
         }
         try{
-         await axios.post('http://localhost:3000/foods', newItem)
+         await axios.post('https://food-cart-4d5c.onrender.com/foods', newItem)
         setMenu((prev) => [...prev, newItem])
         navigate('/inventory')
         }

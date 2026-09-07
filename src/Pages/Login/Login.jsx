@@ -40,7 +40,7 @@ const Login = () => {
 
     const fetchadmin = async () => {
         
-        const response = await axios.get("http://localhost:3000/admins")
+        const response = await axios.get("https://food-cart-4d5c.onrender.com/admins")
         setAdmin(response.data)
         
     }

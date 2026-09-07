@@ -67,7 +67,7 @@ const EditMenuItems = () => {
         }:
         item
     )
-    await fetch(`http://localhost:3000/foods/${id}`,
+    await fetch(`https://food-cart-4d5c.onrender.com/foods/${id}`,
     {
         method : 'PUT',
         headers:{

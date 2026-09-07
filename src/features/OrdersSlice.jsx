@@ -10,7 +10,7 @@ const initialState = {
 export const fetchOrders = createAsyncThunk(
     'orders/fetchOrders',
     async () => {
-        const response = await fetch('http://localhost:3000/orders')
+        const response = await fetch(' https://food-cart-4d5c.onrender.com/orders')
         const data = await response.json()
         return data
         
@@ -27,7 +27,7 @@ export const updateOrders = createAsyncThunk(
             status
         }
        
-       const response =  await fetch(`http://localhost:3000/orders/${order.id}`,
+       const response =  await fetch(` https://food-cart-4d5c.onrender.com/orders/${order.id}`,
 
             {
                 method: 'PUT',

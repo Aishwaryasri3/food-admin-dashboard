@@ -33,7 +33,7 @@ const MenuItems = () => {
 
 
   const handleDelete = async (id) => {
-    await axios.delete(`http://localhost:3000/foods/${id}`)
+    await axios.delete(`https://food-cart-4d5c.onrender.com/foods/${id}`)
     const update = menu.filter((item) => item.id !== id)
     setMenu(update)
   }

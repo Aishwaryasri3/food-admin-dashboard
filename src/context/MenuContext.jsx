@@ -9,7 +9,7 @@ export const MenuProvider = ({children}) => {
        const fetchMenu = async () => {
     setLoading(true)
     try{
-      const response = await fetch('http://localhost:3000/foods')
+      const response = await fetch('https://food-cart-4d5c.onrender.com/foods')
       const data = await response.json()
       setMenu(data)
     }

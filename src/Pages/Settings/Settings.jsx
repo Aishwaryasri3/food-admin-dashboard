@@ -22,7 +22,7 @@ const Settings = () => {
 
  const fetchAdmin = async () => {
   try{
-  const response = await axios.get('http://localhost:3000/admins/1')
+  const response = await axios.get('https://food-cart-4d5c.onrender.com/admins/1')
   setUserName(response.data.userName)
  }
  catch(error){
@@ -43,7 +43,7 @@ const Settings = () => {
       return
     }
     try{
-    await axios.patch('http://localhost:3000/admins/1',updated)
+    await axios.patch('https://food-cart-4d5c.onrender.com/admins/1',updated)
       dispatch(login(userName))
       setError('')
       setSuccessMessage('Profile Updated Successfully')
