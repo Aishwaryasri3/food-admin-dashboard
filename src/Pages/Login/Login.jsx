@@ -42,7 +42,7 @@ const Login = () => {
         
         const response = await axios.get("https://food-cart-4d5c.onrender.com/admins")
         setAdmin(response.data)
-        console.log('Admin data :', response.data)
+       
         
     }
 
